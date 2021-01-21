@@ -1,0 +1,115 @@
+@mixin search() {
+  form {
+    flex-grow: 5;
+    background-color: $color-gray;
+    input {
+      border: transparent;
+      &:focus {
+        box-shadow: none;
+        background-color: $color-second;
+      }
+    }
+
+    i {
+      color: #ec5252;
+      padding: 11px;
+      background-color: white;
+      transition: 0.5s;
+      height: 100%;
+      cursor: pointer;
+      &:hover {
+        background-color: #ec5252;
+        color: white;
+      }
+    }
+
+    .input-group {
+      border: 1px solid #000026;
+    }
+  }
+}
+@mixin text($color, $font-size, $font-weight, $line-height) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+@mixin buttonHeader() {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #505763;
+  font-weight: 400;
+  height: 45px;
+  line-height: 20px;
+  padding: 12px 15px;
+  white-space: nowrap;
+}
+@mixin cardContent() {
+  .card-body {
+    box-shadow: 0 1px 0 0 rgba(232, 233, 235, 0.5);
+    .card-title {
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      font-weight: 700;
+      height: 42px;
+      font-size: 13px;
+      color: #29303b;
+      margin-bottom: 0;
+    }
+    .card-text {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 11px;
+      color: #686f7a;
+    }
+    .rating {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      i {
+        color: #f4c150;
+        line-height: 1;
+        text-align: left;
+        font-size: 12px;
+        position: relative;
+        bottom: 3px;
+      }
+      .count-star {
+        color: rgb(80, 87, 99);
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .count-review {
+        color: rgb(104, 111, 122);
+        font-size: 12px;
+        font-size: 600;
+        margin-left: 5px;
+      }
+    }
+    .price {
+      text-align: right;
+      .old {
+        font-size: 13px;
+        font-weight: 400;
+        text-decoration: line-through;
+        margin-right: 6px;
+      }
+      .current {
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        top: 3px;
+        // margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.benefit {
+  background: $color-gray;
+  .benefit-container {
+    padding: 24px 0;
+    display: flex;
+    .benefit-content {
+      display: flex !important;
+      align-items: flex-start;
+      padding: 24px;
+      text-align: left;
+      background: #fff;
+      border: 1px solid #e8e9eb;
+      border-radius: 2px;
+      display: block;
+      //   height: 100%;
+      margin-right: 16px;
+      width: 30%;
+      h1 {
+        @include text($color-black, 18px, 700, 1.47em);
+      }
+      p {
+        @include text($color-black, 15px, 400, 1.5);
+      }
+      .benefit__text {
+        margin-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.review {
+  background-color: $color-gray;
+  .review-header {
+    @include text(null, 24px, 700, 1.33em);
+  }
+  .card {
+    height: 250px;
+    .card-avatar {
+      padding: 25px;
+      padding-bottom: 0;
+      display: flex;
+      align-items: center;
+      p {
+        margin-bottom: 0;
+        @include text(null, 16px, 700, 1.5);
+      }
+      img,
+      .card-img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 17px;
+      }
+      .card-img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-gray-text;
+        color: $color-second;
+      }
+    }
+    &:hover {
+      box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+        5px 8px 1px 0 rgba(20, 23, 28, 0.1);
+    }
+  }
+  .owl-prev {
+    left: -2%;
+  }
+  .owl-next {
+    right: -2%;
+  }
+}

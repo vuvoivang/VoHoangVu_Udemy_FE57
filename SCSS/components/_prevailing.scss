@@ -1,0 +1,16 @@
+.prevailing {
+  padding-bottom: 20px;
+  h1 {
+    @include text($color-gray-text, 19px, 400, 1.47em);
+    margin: 10px 0;
+  }
+  .prevailing-content {
+    @include cardContent();
+  }
+  .owl-prev {
+    left: -2%;
+  }
+  .owl-next {
+    right: -2%;
+  }
+}

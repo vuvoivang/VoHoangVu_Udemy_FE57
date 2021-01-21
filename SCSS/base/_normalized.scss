@@ -1,0 +1,32 @@
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 30%;
+  left: -3.5%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: white !important;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+    0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  // border: 1px solid rgb(118, 118, 118) !important;
+  &:focus {
+    outline: none;
+  }
+  span {
+    color: #007791;
+    // line-height: 45px;
+    line-height: 0.6;
+    font-size: 45px;
+    font-weight: 500;
+    align-items: center;
+  }
+}
+.owl-next {
+  left: unset;
+  right: -3.5%;
+}
+.owl-next.disabled,
+.owl-prev.disabled {
+  display: none !important;
+}

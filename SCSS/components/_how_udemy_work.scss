@@ -1,0 +1,17 @@
+.how_udemy_work {
+  background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+  color: white;
+  .column {
+    padding: 20px 0;
+    justify-content: center;
+    .icon {
+      margin-right: 16px;
+      margin-top: -2px;
+      font-size: 47px;
+      height: 1em;
+    }
+    .text {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.recommend {
+  position: relative;
+  margin: 35px 0;
+  padding: 120px 0;
+  background-color: #29303b;
+  color: rgb(247, 248, 250);
+  .recommend__container {
+    display: flex;
+    justify-content: center;
+    .recommend__text {
+      text-align: center;
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 15px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+  i {
+    font-size: 24px;
+    text-align: center;
+    width: 19.65%;
+  }
+  .recommend__icon {
+    margin: 0 auto;
+    width: 100%;
+    .recommend-top,
+    .recommend-bottom {
+      position: absolute;
+      width: 100%;
+    }
+    .recommend-top {
+      top: 11%;
+    }
+    .recommend-bottom {
+      bottom: 11%;
+    }
+    .recommend-center {
+      position: absolute;
+      top: calc(50% - 12px);
+      width: 100%;
+      i:first-child {
+        margin-left: 10%;
+        margin-right: 20%;
+      }
+      i:last-child {
+        margin-right: 10%;
+        margin-left: 20%;
+      }
+    }
+  }
+}
