@@ -1,0 +1,37 @@
+.for-non-student {
+  background-color: $color-gray;
+  text-align: center;
+  .for-non-student__header {
+    @include text($color-gray-text-2, 13px, null, 1.43);
+  }
+  .row {
+    justify-content: flex-end;
+  }
+  .for-non-student__enroll {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    .for-non-student__part {
+      width: 50%;
+      padding: 28px 30px;
+      .for-non-student__item {
+        max-width: 400px;
+        a {
+          @include text($color-black, 19px, 700, 0.1.47em);
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        p {
+          @include text($color-black, 16px, 400, 1.5em);
+          padding-top: 3px;
+        }
+      }
+      &:first-child {
+        border-right: 1px solid #dedfe0;
+      }
+    }
+  }
+}

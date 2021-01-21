@@ -18,3 +18,11 @@
   width: 80%;
   margin: 0 auto;
 }
+.btn-danger {
+  &:hover {
+    color: #fff;
+    font-weight: 600;
+    background-color: #992337;
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,43 @@
+.contact {
+  padding: 30px 40px;
+  border-top: 1px solid $color-gray;
+  border-bottom: 1px solid $color-gray;
+  ul {
+    li {
+      list-style: none;
+      a {
+        @include text($color-text-contact, 13px, 400, 1.43);
+        &:hover {
+          color: $color-black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .contact__language {
+    display: flex;
+    justify-content: flex-end;
+    .dropup {
+      .btn-language {
+        padding: 9px 10px 9px 10px;
+        background-color: $color-second;
+      }
+      i {
+        margin: 0 10px;
+      }
+      span {
+        @include text(null, 13px, 700, 18px);
+        margin-right: 20px;
+      }
+      .dropdown-toggle {
+        &::after {
+          border-bottom-color: #a5817a;
+        }
+      }
+
+      &:hover {
+        border-color: $color-black;
+      }
+    }
+  }
+}

@@ -7,74 +7,39 @@
   }
   .categories {
     flex-grow: 1;
+    &:hover {
+      background-color: $color-gray;
+    }
   }
   form {
-    flex-grow: 5;
-
-    input {
-      border: none;
-      background-color: $color-gray;
-
-      &:focus {
-        box-shadow: none;
-        background-color: $color-second;
+    .input-group {
+      .form-control,
+      i {
+        background-color: $color-gray;
       }
+    }
+    input {
+      &:focus.form-control,
       &:focus + i {
         background-color: $color-second;
       }
     }
-
-    i {
-      color: #ec5252;
-      padding: 10px;
-      background-color: $color-gray;
-      transition: 0.5s;
-      height: 100%;
-      cursor: pointer;
-      &:hover {
-        background-color: #ec5252;
-        color: white;
-      }
-    }
-    // position: relative;
-    // display: flex;
-    // align-items: center;
-
-    .input-group {
-      //   background-color:#ec5252;
-      border: 1px solid #000026;
-    }
-    // Dung postion thi padding right o input
-
-    //   i {
-    //     color: #ec5252;
-    //padding: 10px;
-    // height: 100%;
-    // width: 8%;
-    // justify-content: center;
-    // //   position: absolute;
-    // //   right: 0;
-    // //   top: 0;
-    // display: flex;
-    // align-items: center;
-
-    // i:hover {
-    //   background-color: #ec5252;
-    //   color: white;
-    //   cursor: pointer;
-    // }
   }
+  @include search();
 }
 .header-right {
   ul {
     li {
-      .nav-link {
-        @include buttonHeader();
-      }
       margin-right: 0.625rem;
       .btn-login {
         border: 1px solid gray;
+        &:hover {
+          font-weight: 600;
+        }
       }
+    }
+    .btn-hover {
+      @include buttonHeader();
     }
   }
 }
